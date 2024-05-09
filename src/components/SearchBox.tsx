@@ -59,14 +59,7 @@ export default function SearchBox() {
           <MagnifyingGlassIcon size="25" color="white" />
         </TouchableOpacity>
       </View>
-      <View className="absolute left-0 right-0 bg-gray-300 top-16">
-        {[1, 2, 3, 4, 5, 6, 7].map((d, idx: number) => (
-          <Text className="h-8" key={idx}>
-            Data....
-          </Text>
-        ))}
-      </View>
-      {/* {locations.length > 0 && showSearch ? (
+      {locations.length > 0 && showSearch ? (
         <View className="z-50 w-full bg-gray-300 rounded-3xl">
           {locations.map((location: ILocation, idx: number) => {
             let showBorder = idx != locations.length - 1;
@@ -87,7 +80,7 @@ export default function SearchBox() {
             );
           })}
         </View>
-      ) : null} */}
+      ) : null}
     </View>
   );
 }

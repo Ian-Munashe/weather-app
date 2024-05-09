@@ -20,7 +20,7 @@
     "react-native": "0.73.6",
     "react-native-heroicons": "^4.0.0",
     "react-native-progress": "^5.0.1",
-    "react-native-svg": "^15.2.0",
+    "react-native-svg": "^14.1.0",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
