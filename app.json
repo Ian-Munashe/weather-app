@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "native_react",
-    "slug": "native_react",
+    "name": "Weather",
+    "slug": "weather",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ianmunashe.weather"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "20a55db9-1fa5-4b8a-a2d5-aed62698c8aa"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/20a55db9-1fa5-4b8a-a2d5-aed62698c8aa"
     }
   }
 }

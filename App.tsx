@@ -23,13 +23,13 @@ export default function App() {
   const weather = useWeatherStoreStore((state) => state.weather);
   const { current, location } = weather || "";
 
-  // useEffect(() => {
-  //   useWeatherStoreStore.setState({ loading: true });
-  //   fetchWeatherForecast({ cityName: "Harare", days: 7 }).then((data) => {
-  //     if (data != null) useWeatherStoreStore.setState({ weather: data });
-  //     useWeatherStoreStore.setState({ loading: false });
-  //   });
-  // }, []);
+  useEffect(() => {
+    useWeatherStoreStore.setState({ loading: true });
+    fetchWeatherForecast({ cityName: "Harare", days: 7 }).then((data) => {
+      if (data != null) useWeatherStoreStore.setState({ weather: data });
+      useWeatherStoreStore.setState({ loading: false });
+    });
+  }, []);
 
   return (
     <View className="relative flex-1">
@@ -57,7 +57,7 @@ export default function App() {
           }}
         >
           <SearchBox />
-          <View className="space-y-12 top-20">
+          <View className="z-10 space-y-12 top-20">
             <Text className="text-2xl font-bold text-center text-white">
               {location?.name},{" "}
               <Text className="text-lg font-semibold text-gray-300">

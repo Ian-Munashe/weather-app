@@ -35,7 +35,7 @@ export default function SearchBox() {
   };
 
   return (
-    <View style={{ height: "8%" }} className="relative mx-4">
+    <View style={{ height: "8%" }} className="relative z-20 mx-4">
       <View
         className="flex-row items-center justify-end rounded-full"
         style={{
@@ -61,7 +61,9 @@ export default function SearchBox() {
       </View>
       <View className="absolute left-0 right-0 bg-gray-300 top-16">
         {[1, 2, 3, 4, 5, 6, 7].map((d, idx: number) => (
-          <Text className="h-8">Data....</Text>
+          <Text className="h-8" key={idx}>
+            Data....
+          </Text>
         ))}
       </View>
       {/* {locations.length > 0 && showSearch ? (
